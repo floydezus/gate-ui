@@ -1,0 +1,28 @@
+{
+  "name": "gate-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=14"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floydezus/gate-ui.git"
+  },
+  "keywords": [],
+  "author": "alexander tokarev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/floydezus/gate-ui/issues"
+  },
+  "homepage": "https://floydezus.github.io/gate-ui",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
