@@ -9,6 +9,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:css": "stylelint ./public/css/main.css",
+    "lint:html": "htmlhint ./public/*.html",
+    "lint:js": "eslint ./public/js/*.js",
     "deploy": "gh-pages -d public"
   },
   "repository": {
@@ -16,13 +19,19 @@
     "url": "git+https://github.com/floydezus/gate-ui.git"
   },
   "keywords": [],
-  "author": "alexander tokarev",
+  "author": "Alexander Tokarev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/floydezus/gate-ui/issues"
   },
   "homepage": "https://floydezus.github.io/gate-ui",
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "gh-pages": "^4.0.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^13.7.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

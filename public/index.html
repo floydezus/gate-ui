@@ -5,37 +5,34 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Тестовое задание. Александр Токарев</title>
 </head>
 <body>
-    <main id="root">
+    <main>
         <div class="container">
-            <form class="search-bar">
+            <form  class="search-bar" id="form-search">
                 <label>
                     <input
+                        name="search"
                         placeholder="Начните печатать"
                         class="search-input"
-                        type="text">
+                        type="text"
+                    >
                 </label>
                 <button class="btn" type="submit">
                     Найти
                 </button>
-                <div class="counter">
-                    <span>0</span> из <span>7</span> выбрано
-                </div>
+                <div class="counter"></div>
             </form>
             <div class="search-results">
                 <ul id="list-placeholder"></ul>
             </div>
         </div>
         <template id="card-template">
-            <li>
+            <li class="card-wrapper">
                 <div class="card">
                     <div class="card-content">
                         <div class="title">
@@ -50,5 +47,6 @@
         </template>
     </main>
 <script type="module" src="js/startApp.js"></script>
+<script type="module" src="js/search.js"></script>
 </body>
 </html>
